@@ -14,17 +14,18 @@ function handleSelectedIcon() {
     // document.querySelector(".tea-question").style.display = "none";
 
     function milkTeaSelection() {
-      //   console.log("milk-tea test");
-      //   document.querySelector(".milk-tea").outerHTML = "test";
-      //   document.querySelector(".fruit-tea").style.display = "none";
-      // figure out how to display green tea boba selection
+      console.log("milk-tea test");
+      // header.outerHTML = "<h1>Try these milk teas!</h1>";
+      document.querySelector(".milk-tea").outerHTML = "test";
+      document.querySelector(".fruit-tea").style.display = "none";
+      // figure out how to display green tea boba images and change in header selection
     }
 
     // document.querySelector(".fruit").style.display = "none";
     // document.querySelector(".milk").style.display = "none";
 
-    // const teaSelection = document.querySelector(".milk-tea");
-    // teaSelection.addEventListener("click", milkTeaSelection);
+    const milkSelection = document.querySelector(".milk-tea");
+    milkSelection.addEventListener("click", milkTeaSelection);
   }
 }
 
