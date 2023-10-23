@@ -8,21 +8,18 @@ function handleSelectedIcon() {
   if (icon === greenTeaIcon) {
     header.outerHTML = "<h1>Milk tea or Fruit tea?</h1>";
     greenTeaIcon.outerHTML =
-      "<div> <button class='button milk-tea'> <h1>🥛 Milk</h1> </button> <button class='button fruit-tea'> <h1>🍓 Fruit </button> </div>";
+      "<div> <button class='button milk-tea'> 🥛 Milk </button> <button class='button fruit-tea'> 🍓 Fruit </button> </div>";
 
     document.querySelector(".black-tea").style.display = "none";
-    // document.querySelector(".tea-question").style.display = "none";
 
     function milkTeaSelection() {
-      console.log("milk-tea test");
-      // header.outerHTML = "<h1>Try these milk teas!</h1>";
+      // console.log("milk-tea test");
+      document.querySelector(".quiz-question").outerHTML =
+        "<h1>Try these milk teas! </h1> <ul> <li> Matcha milk tea </li> <li> Jasmine milk tea </li> </ul>";
+
       document.querySelector(".milk-tea").outerHTML = "test";
       document.querySelector(".fruit-tea").style.display = "none";
-      // figure out how to display green tea boba images and change in header selection
     }
-
-    // document.querySelector(".fruit").style.display = "none";
-    // document.querySelector(".milk").style.display = "none";
 
     const milkSelection = document.querySelector(".milk-tea");
     milkSelection.addEventListener("click", milkTeaSelection);
