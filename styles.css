@@ -15,7 +15,7 @@ header {
 }
 
 header h1 {
-  font-size: 86px;
+  font-size: 55px;
   color: #28211a;
 }
 
@@ -27,11 +27,14 @@ section {
 
 button,
 .button {
-  padding: 10px 20px;
-  border: 1px solid #28211a;
+  padding: 20px 30px;
+  border: 1px solid #ffb068;
   border-radius: 7px;
   font-family: "Short Stack", cursive;
-  background: transparent;
+  background: #ffb068;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  font-size: 17px;
+  color: white;
 }
 
 button:hover,
@@ -39,10 +42,10 @@ button:hover,
   cursor: pointer;
 }
 
-.boba-icon {
+.main-header {
   display: flex;
   align-items: baseline;
-  font-size: 120px;
+  font-size: 100px;
   margin: 10px;
 }
 
