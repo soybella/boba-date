@@ -64,3 +64,8 @@ button:hover,
   /* border: none; */
   /* border-radius: 50%; */
 }
+
+.green-tea-milk-grid {
+  display: grid;
+  border: 1px solid red;
+}

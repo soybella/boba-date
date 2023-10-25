@@ -11,8 +11,16 @@ function handleGreenTeaIcon() {
   document.querySelector(".black-tea").style.display = "none";
 
   function milkTeaSelection() {
+    let matchaTea = new Image(175, 200);
+    matchaTea.src = "/boba-date/images/matcha-tea.png";
+    document.body.appendChild(matchaTea);
+
+    let jasmineTea = new Image(175, 200);
+    jasmineTea.src = "/boba-date/images/jasmine-tea.png";
+    document.body.appendChild(jasmineTea);
+
     document.querySelector(".quiz-question").outerHTML =
-      "<h1>Try these milk teas! </h1> <ul> <li> Matcha milk tea </li> <li> Jasmine milk tea </li> </ul>";
+      "<h1>Try these milk teas! </h1> <div class='green-tea-milk-grid'> <ul> <li> Matcha milk tea </li> <li> Jasmine milk tea </li> </ul> </div>";
   }
 
   function fruitTeaSelection() {
@@ -50,12 +58,6 @@ function handleBlackTeaIcon() {
   const fruitSelection = document.querySelector(".fruit-tea");
   fruitSelection.addEventListener("click", fruitTeaSelection);
 }
-
-// const milkSelection = document.querySelector(".milk-tea");
-// milkSelection.addEventListener("click", milkTeaSelection);
-
-// const fruitSelection = document.querySelector(".fruit-tea");
-// fruitSelection.addEventListener("click", fruitTeaSelection);
 
 let header = document.querySelector(".header");
 
