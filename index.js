@@ -12,20 +12,28 @@ function handleGreenTeaIcon() {
 
   function milkTeaSelection() {
     let matchaTea = new Image();
-    matchaTea.src = "/boba-date/images/matcha-tea.png";
+    matchaTea.src = "/boba-date/images/matcha-milk-tea.jpeg";
     // document.body.appendChild(matchaTea);
 
     let jasmineTea = new Image();
-    jasmineTea.src = "/boba-date/images/jasmine-tea.png";
+    jasmineTea.src = "/boba-date/images/jasmine-milk-tea.jpeg";
     // document.body.appendChild(jasmineTea);
 
     document.querySelector(".quiz-question").outerHTML =
-      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/matcha-tea.png' width='200' height='230'/> <p> Matcha milk tea </p> </div> <div> <img src='/boba-date/images/jasmine-tea.png' width='200' height='230'/> <p> Jasmine milk tea <p> </div> </div>";
+      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/matcha-milk-tea.jpeg' width='200' height='300'/> <p> Matcha milk tea </p> </div> <div> <img src='/boba-date/images/jasmine-milk-tea.jpeg' width='200' height='300'/> <p> Jasmine milk tea <p> </div> </div>";
   }
 
   function fruitTeaSelection() {
+    let mangoTea = new Image();
+    mangoTea.src = "/boba-date/images/mango-fruit-tea.png";
+    // document.body.appendChild(matchaTea);
+
+    let guavaTea = new Image();
+    guavaTea.src = "/boba-date/images/guava-fruit-tea.png";
+    // document.body.appendChild(jasmineTea);
+
     document.querySelector(".quiz-question").outerHTML =
-      "<h1>Try these fruit teas! </h1> <ul> <li> Honeydew green tea </li> <li> Grapefruit green tea </li> </ul>";
+      "<div class='drink-display-section'> <h1>Try these fruit teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/mango-fruit-tea.jpeg' width='200' height='300'/> <p> Mango fruit tea </p> </div> <div> <img src='/boba-date/images/guava-fruit-tea.jpeg' width='200' height='300'/> <p> Guava milk tea <p> </div> </div>";
   }
 
   const milkSelection = document.querySelector(".milk-tea");
@@ -44,7 +52,7 @@ function handleBlackTeaIcon() {
 
   function milkTeaSelection() {
     document.querySelector(".quiz-question").outerHTML =
-      "<h1>Try these milk teas! </h1> <ul> <li> Okinawa milk tea </li> <li> Brown sugar milk tea </li> </ul>";
+      "<h1>Try these milk teas! </h1> <ul> <li> Thai milk tea </li> <li> Taro milk tea </li> </ul>";
   }
 
   function fruitTeaSelection() {

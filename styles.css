@@ -73,7 +73,18 @@ button:hover,
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 1px solid red;
+  grid-gap: 20px;
+  /* object-fit: cover; */
+  /* aspect-ratio: 1/1; */
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+
+.drink-display-section img {
+  /* width: fit-content; */
   object-fit: cover;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  /* justify-content: center; */
+  /* margin: 0 auto; */
 }
