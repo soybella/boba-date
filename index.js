@@ -11,16 +11,16 @@ function handleGreenTeaIcon() {
   document.querySelector(".black-tea").style.display = "none";
 
   function milkTeaSelection() {
-    let matchaTea = new Image(175, 200);
+    let matchaTea = new Image();
     matchaTea.src = "/boba-date/images/matcha-tea.png";
-    document.body.appendChild(matchaTea);
+    // document.body.appendChild(matchaTea);
 
-    let jasmineTea = new Image(175, 200);
+    let jasmineTea = new Image();
     jasmineTea.src = "/boba-date/images/jasmine-tea.png";
-    document.body.appendChild(jasmineTea);
+    // document.body.appendChild(jasmineTea);
 
     document.querySelector(".quiz-question").outerHTML =
-      "<h1>Try these milk teas! </h1> <div class='green-tea-milk-grid'> <ul> <li> Matcha milk tea </li> <li> Jasmine milk tea </li> </ul> </div>";
+      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/matcha-tea.png' width='200' height='230'/> <p> Matcha milk tea </p> </div> <div> <img src='/boba-date/images/jasmine-tea.png' width='200' height='230'/> <p> Jasmine milk tea <p> </div> </div>";
   }
 
   function fruitTeaSelection() {

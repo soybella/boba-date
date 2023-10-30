@@ -65,7 +65,15 @@ button:hover,
   /* border-radius: 50%; */
 }
 
-.green-tea-milk-grid {
+.drink-display-section {
+  text-align: center;
+}
+
+.drink-display-grid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 1px solid red;
+  object-fit: cover;
+  justify-content: center;
+  text-align: center;
 }
