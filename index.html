@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?&family=Sen&family=Short+Stack&family=Source+Code+Pro:wght@200;300;400&family=Source+Sans+3:wght@200;300;400;500;600&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?&family=Sen&family=Short+Stack&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,21 +19,23 @@
     <script src="index.js" async></script>
   </head>
   <body>
-    <header>
-      <div class="main-header">
-        <h1>Find your new go-to bubble tea</h1>
-        <span class="boba-icon">🧋</span>
-      </div>
-    </header>
-    <section>
-      <button class="button" id="button">Start!</button>
-      <div class="quiz-question" style="display: none">
-        <h1 class="header">Pick your base:</h1>
-        <div class="icons" style="margin: 0 auto">
-          <button class="icon tea green-tea">🍵 Green tea</button>
-          <button class="icon tea black-tea">☕️ Black tea</button>
+    <div class="main">
+      <header>
+        <div class="main-header">
+          <h1>Find your new go-to bubble tea</h1>
+          <span class="boba-icon">🧋</span>
         </div>
-      </div>
-    </section>
+      </header>
+      <section>
+        <button class="button" id="button">Start!</button>
+        <div class="quiz-question" style="display: none">
+          <h1 class="header">Pick your base:</h1>
+          <div class="button-selection" style="margin: 0 auto">
+            <button class="selection tea green-tea">🍵 Green tea</button>
+            <button class="selection tea black-tea">☕️ Black tea</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

@@ -4,36 +4,20 @@ function handleButton() {
 }
 
 function handleGreenTeaIcon() {
-  header.outerHTML = "<h1>Milk tea or Fruit tea?</h1>";
+  header.outerHTML = "<h1>Add milk or fruit tea?</h1>";
   greenTeaIcon.outerHTML =
-    "<div> <button class='button milk-tea'> 🥛 Milk </button> <button class='button fruit-tea'> 🍓 Fruit </button> </div>";
+    "<div> <button class='selection button milk-tea'> 🥛 Milk </button> <button class='selection button fruit-tea'> 🍓 Fruit </button> </div>";
 
   document.querySelector(".black-tea").style.display = "none";
 
   function milkTeaSelection() {
-    let matchaTea = new Image();
-    matchaTea.src = "/boba-date/images/matcha-milk-tea.jpeg";
-    // document.body.appendChild(matchaTea);
-
-    let jasmineTea = new Image();
-    jasmineTea.src = "/boba-date/images/jasmine-milk-tea.jpeg";
-    // document.body.appendChild(jasmineTea);
-
     document.querySelector(".quiz-question").outerHTML =
-      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/matcha-milk-tea.jpeg' width='200' height='300'/> <p> Matcha milk tea </p> </div> <div> <img src='/boba-date/images/jasmine-milk-tea.jpeg' width='200' height='300'/> <p> Jasmine milk tea <p> </div> </div>";
+      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/matcha-milk-tea.jpeg' width='200' height='300'/> <p> Matcha milk tea </p> <p class='drink-description'> Earthy and nutty flavor with the right amount of sweetness. </p> </div> <div> <img src='/boba-date/images/jasmine-milk-tea.jpeg' width='200' height='300'/> <p> Jasmine milk tea <p> <p class='drink-description'> Creamy and floral flavor with delicate sweet notes. </p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
   }
 
   function fruitTeaSelection() {
-    let mangoTea = new Image();
-    mangoTea.src = "/boba-date/images/mango-fruit-tea.png";
-    // document.body.appendChild(matchaTea);
-
-    let guavaTea = new Image();
-    guavaTea.src = "/boba-date/images/guava-fruit-tea.png";
-    // document.body.appendChild(jasmineTea);
-
     document.querySelector(".quiz-question").outerHTML =
-      "<div class='drink-display-section'> <h1>Try these fruit teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/mango-fruit-tea.jpeg' width='200' height='300'/> <p> Mango fruit tea </p> </div> <div> <img src='/boba-date/images/guava-fruit-tea.jpeg' width='200' height='300'/> <p> Guava milk tea <p> </div> </div>";
+      "<div class='drink-display-section'> <h1>Try these fruit teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/mango-fruit-tea.jpeg' width='200' height='300'/> <p> Mango green tea </p> </div> <div> <img src='/boba-date/images/guava-fruit-tea.jpeg' width='200' height='300'/> <p> Guava green tea <p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
   }
 
   const milkSelection = document.querySelector(".milk-tea");
@@ -44,20 +28,20 @@ function handleGreenTeaIcon() {
 }
 
 function handleBlackTeaIcon() {
-  header.outerHTML = "<h1>Milk tea or Fruit tea?</h1>";
+  header.outerHTML = "<h1>Add milk or fruit tea?</h1>";
   blackTeaIcon.outerHTML =
-    "<div> <button class='button milk-tea'> 🥛 Milk </button> <button class='button fruit-tea'> 🍓 Fruit </button> </div>";
+    "<div> <button class='selection button milk-tea'> 🥛 Milk </button> <button class='selection button fruit-tea'> 🍓 Fruit </button> </div>";
 
   document.querySelector(".green-tea").style.display = "none";
 
   function milkTeaSelection() {
     document.querySelector(".quiz-question").outerHTML =
-      "<h1>Try these milk teas! </h1> <ul> <li> Thai milk tea </li> <li> Taro milk tea </li> </ul>";
+      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/thai-milk-tea.jpeg' width='200' height='300'/> <p> Thai milk tea </p> </div> <div> <img src='/boba-date/images/taro-milk-tea.jpeg' width='200' height='300'/> <p> Taro milk tea </p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
   }
 
   function fruitTeaSelection() {
     document.querySelector(".quiz-question").outerHTML =
-      "<h1>Try these fruit teas! </h1> <ul> <li> Passion fruit black tea </li> <li> Peach Oolong tea </li> </ul>";
+      "<div class='drink-display-section'> <h1>Try these fruit teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/strawberry-fruit-tea.jpeg' width='200' height='300'/> <p> Strawberry black tea </p> </div> <div> <img src='/boba-date/images/peach-fruit-tea.jpeg' width='200' height='300'/> <p> Peach black tea </p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
   }
 
   const milkSelection = document.querySelector(".milk-tea");

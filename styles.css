@@ -3,11 +3,19 @@ body {
   flex-direction: column;
   margin: 0 auto;
   height: 100vh;
+  box-sizing: border-box;
+  border: 1px solid red;
   width: fit-content;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
   font-family: "Short Stack", cursive;
+  color: #583b39;
+  opacity: 0.8;
+  background: linear-gradient(
+    360deg,
+    rgb(251, 196, 167) 0%,
+    rgb(251, 251, 251) 100%
+  );
 }
 
 header {
@@ -16,7 +24,6 @@ header {
 
 header h1 {
   font-size: 55px;
-  color: #28211a;
 }
 
 section {
@@ -25,21 +32,33 @@ section {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 button,
 .button {
   padding: 20px 30px;
-  border: 1px solid #ffb068;
+  border: 1px solid white;
   border-radius: 7px;
   font-family: "Short Stack", cursive;
-  background: #ffb068;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  background: white;
+  box-shadow: 5px 10px 10px rgba(40, 34, 34, 0.2);
   font-size: 17px;
-  color: white;
+  color: #583b39;
+  justify-content: space-between;
 }
 
 button:hover,
 .button:hover {
   cursor: pointer;
+  opacity: 0.8;
+  transition: 150ms ease-in-out;
+}
+
+.restart-button {
+  /* position: relative; */
+  margin: 30px auto;
 }
 
 .main-header {
@@ -57,34 +76,32 @@ button:hover,
   text-align: center;
 }
 
-.icon {
+.selection {
   padding: 15px 35px;
-  /* background: transparent; */
-  /* font-size: 20px; */
-  /* border: none; */
-  /* border-radius: 50%; */
+  margin: 15px;
 }
 
 .drink-display-section {
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .drink-display-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid red;
   grid-gap: 20px;
-  /* object-fit: cover; */
-  /* aspect-ratio: 1/1; */
-  /* justify-content: center; */
-  /* text-align: center; */
 }
 
 .drink-display-section img {
-  /* width: fit-content; */
   object-fit: cover;
   justify-content: space-between;
   border-radius: 10px;
-  /* justify-content: center; */
+  width: 240px;
+  height: 320px;
+  border: 0.5px solid white;
+}
+
+.drink-description {
+  max-width: 300px;
   /* margin: 0 auto; */
 }
