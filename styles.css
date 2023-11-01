@@ -2,9 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
-  border: 1px solid red;
   width: fit-content;
   align-items: center;
   justify-content: center;
@@ -36,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+.main {
+  opacity: 1;
+}
+
 button,
 .button {
   padding: 20px 30px;
@@ -57,7 +60,7 @@ button:hover,
 }
 
 .restart-button {
-  /* position: relative; */
+  position: relative;
   margin: 30px auto;
 }
 
@@ -65,7 +68,6 @@ button:hover,
   display: flex;
   align-items: baseline;
   font-size: 100px;
-  margin: 10px;
 }
 
 .quiz-question {
@@ -103,5 +105,4 @@ button:hover,
 
 .drink-description {
   max-width: 300px;
-  /* margin: 0 auto; */
 }
