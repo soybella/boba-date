@@ -12,7 +12,7 @@ function handleGreenTeaIcon() {
 
   function milkTeaSelection() {
     document.querySelector(".quiz-question").outerHTML =
-      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/matcha-milk-tea.jpeg' width='200' height='300'/> <p> Matcha milk tea </p> <p class='drink-description'> Earthy and nutty flavor with the right amount of sweetness. </p> </div> <div> <img src='/boba-date/images/jasmine-milk-tea.jpeg' width='200' height='300'/> <p> Jasmine milk tea <p> <p class='drink-description'> Creamy and floral flavor with delicate sweet notes. </p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
+      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/matcha-milk-tea.jpeg' width='200' height='300'/> <p> Matcha milk tea </p> <p class='drink-description'> Earthy and nutty flavor with the right amount of sweetness. Popular for its unique green color. </p> </div> <div> <img src='/boba-date/images/jasmine-milk-tea.jpeg' width='200' height='300'/> <p> Jasmine milk tea <p> <p class='drink-description'> Creamy and floral flavor with delicate sweet notes. </p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
   }
 
   function fruitTeaSelection() {
@@ -36,12 +36,12 @@ function handleBlackTeaIcon() {
 
   function milkTeaSelection() {
     document.querySelector(".quiz-question").outerHTML =
-      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/thai-milk-tea.jpeg' width='200' height='300'/> <p> Thai milk tea </p> <p class='drink-description'> Sweet and tart flavor with a light caffeine boost. </p> </div> <div> <img src='/boba-date/images/taro-milk-tea.jpeg' width='200' height='300'/> <p> Taro milk tea </p> <p class='drink-description'> Sweet and tart flavor with a light caffeine boost. </p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
+      "<div class='drink-display-section'> <h1>Try these milk teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/thai-milk-tea.jpeg' width='200' height='300'/> <p> Thai milk tea </p> <p class='drink-description'> A perfect blend of earthy, sweet, and spice flavors. Popular for its distinctive orange color.  </p> </div> <div> <img src='/boba-date/images/taro-milk-tea.jpeg' width='200' height='300'/> <p> Taro milk tea </p> <p class='drink-description'>  Unique flavor similar to that of a sweet potato with hints of vanilla. Well known for its bright purple color. </p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
   }
 
   function fruitTeaSelection() {
     document.querySelector(".quiz-question").outerHTML =
-      "<div class='drink-display-section'> <h1>Try these fruit teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/strawberry-fruit-tea.jpeg' width='200' height='300'/> <p> Strawberry black tea </p> </div> <div> <img src='/boba-date/images/peach-fruit-tea.jpeg' width='200' height='300'/> <p> Peach black tea </p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
+      "<div class='drink-display-section'> <h1>Try these fruit teas! </h1> <div class='drink-display-grid'> <div> <img src='/boba-date/images/strawberry-fruit-tea.jpeg' width='200' height='300'/> <p> Strawberry black tea </p> <p class='drink-description'> Classic sweet strawberry flavor with hints of floral. </p> </div> <div> <img src='/boba-date/images/peach-fruit-tea.jpeg' width='200' height='300'/> <p> Peach black tea </p> <p class='drink-description'> Refreshing juicy peach flavor with earthy hints. </p> </div> </div> <div class='restart-button'> <a href='/boba-date/index.html' class='button'> ↻ Restart </a> </div>";
   }
 
   const milkSelection = document.querySelector(".milk-tea");
